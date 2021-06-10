@@ -1,0 +1,52 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+// counter
+.counter {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+
+  button {
+    padding: 0.25rem 0.5rem;
+    border-radius: 8px;
+
+    &:first-of-type {
+      margin-right: 1rem;
+    }
+    &:last-of-type {
+      margin-left: 1rem;
+    }
+  }
+  .increment {
+    --dark-green: hsl(85, 85%, 35%);
+    --light-green: hsl(81, 88%, 80%);
+
+    border: 2px solid var(--dark-green);
+    color: var(--dark-green);
+    background-color: var(--light-green);
+  }
+  .decrement {
+    --dark-pink: hsl(333, 71%, 51%);
+    --light-pink: hsl(326, 85%, 90%);
+
+    border: 2px solid var(--dark-pink);
+    color: var(--dark-pink);
+    background-color: var(--light-pink);
+  }
+}
+
+// text binding
+.text-binding {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+
+  input[type="text"] {
+    padding: 0.5rem;
+  }
+  .uppercase-text {
+    color: hsl(00, 100, 50);
+  }
+}
